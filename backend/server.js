@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
-const routes = require('./routes/router')
+const router = require('./routes/router')
 
 const app = express()
 
@@ -15,7 +15,7 @@ const corsOptions = {
 }
 
 app.use(cors())
-// app.use('./', router)
+app.use('/api', router)
 
 const port = 8000
 
