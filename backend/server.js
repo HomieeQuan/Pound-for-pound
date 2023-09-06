@@ -17,8 +17,8 @@ const corsOptions = {
 app.use(cors())
 app.use('/api', router)
 
-const port = 8000
+const port = process.env.PORT
 
-const server = app.listen(port, () => {
+const server = app.listen(PORT, () => {
     console.log(`Server is running on port ${port}`)
 })
