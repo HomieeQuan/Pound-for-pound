@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+require('dotenv').config()
 const bodyParser = require('body-parser')
 const router = require('./routes/router')
 
@@ -19,6 +20,4 @@ app.use('/api', router)
 
 const port = process.env.PORT
 
-const server = app.listen(PORT, () => {
-    console.log(`Server is running on port ${port}`)
-})
+app.listen(port, console.log(`Port is running on:${port}`))

@@ -7,11 +7,15 @@ const getFighterByID = asyncHandler(async (req,res) => {
         {
             id: '1',
             name: 'Bob',
+            image: 'bob.jpeg',
             stance: 'southpaw',
             recentFights: [
                 {
                     fighter1: '1',
+                    fighter1Name: 'Bob',
+                    
                     fighter2: '2',
+                    fighter2Name: 'Billy',
                     winner: '2',
                     result: 'KO',
                     date: '2023-08-26'
