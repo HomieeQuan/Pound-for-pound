@@ -6,6 +6,7 @@ import './components/Fighter'
 import React from 'react'
 import NavBar from './components/NavBar';
 import Fighter from './components/Fighter';
+import FighterCard from './components/FighterCard';
 
 function App() {
   return (
